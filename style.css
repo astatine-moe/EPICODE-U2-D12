@@ -39,3 +39,14 @@ body {
 .text-muted {
     color: rgba(255, 255, 255, 0.575) !important;
 }
+.modal-header h5 {
+    color: black !important;
+}
+
+.modal label {
+    color: black;
+}
+
+.modal-body {
+    color: black;
+}
