@@ -33,7 +33,7 @@ const generateCard = (photo) => {
     } = photo;
 
     const $html = `<div class="col-md-4">
-    <div class="card mb-4 shadow-sm">
+    <div class="card bg-dark mb-4 shadow-sm">
         <span class="badge badge-dark">${photographer}</span>
         <img class="card-img-top" src="${medium}" />
         <div class="card-body">
@@ -42,8 +42,8 @@ const generateCard = (photo) => {
             </p>
             <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="view(event, '${alt}', '${original}')">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="hide(event)">Hide</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary" onclick="view(event, '${alt}', '${original}')">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-danger" onclick="hide(event)">Hide</button>
                 </div>
                 <small class="text-muted">${id}</small>
             </div>

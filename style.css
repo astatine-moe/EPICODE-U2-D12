@@ -1,3 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --body-bg: #fff;
+    --body-color: #000;
+}
+html,
+body {
+    background: rgb(30, 30, 30);
+    color: white;
+    overflow-x: hidden;
+}
+
 .card {
     position: relative;
 }
@@ -9,4 +23,19 @@
     right: 1.25em;
 
     box-shadow: 5px 10px 8px #0000005a;
+}
+
+.alt-bg {
+    background: #343a40;
+}
+
+.alt-bg:last-child {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.navbar {
+    background-color: black !important;
+}
+.text-muted {
+    color: rgba(255, 255, 255, 0.575) !important;
 }
