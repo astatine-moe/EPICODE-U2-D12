@@ -78,6 +78,12 @@ const showAlert = (text, type = "success", timeout = 5000) => {
     }, 5000);
 };
 
+$("#fake-error").on("click", function () {
+    showAlert(
+        "Error loading images :( <small>Check console!</small>",
+        "danger"
+    );
+});
 $("#load-images").on("click", function () {
     const query = $("#search").val().trim();
 
@@ -99,7 +105,7 @@ $("#load-images").on("click", function () {
         .catch((err) => {
             console.error(err);
             showAlert(
-                "Error loading images :( <small>Check console!</small>",
+                "Error loading images :( <br><small>Check console!</small>",
                 "danger"
             );
         });
